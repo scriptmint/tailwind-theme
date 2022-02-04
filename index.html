@@ -8,14 +8,15 @@
     <link href="dist/app.css" rel="stylesheet">
   </head>
   <body class="theme-first">
-    <div class="h-screen w-full flex items-center justify-center bg-primary">
+    <div class="h-screen w-full flex items-center justify-center bg-primary dark:bg-gray-800">
       <div class="space-y-4">
-        <h1 class="text-secondary text-center">Hello World!</h1>
+        <h1 class="text-secondary dark:text-gray-200 text-center">Hello World!</h1>
 
         <div class="flex space-x-4">
-          <span id="first" @click="document.body.classList.add('theme-first')" class="bg-[#1e293b] text-gray-200 rounded px-4 py-2 cursor-pointer">Theme First</span>
-          <span id="second" class="bg-[#991b1b] text-gray-200 rounded px-4 py-2 cursor-pointer">Theme Second</span>
-          <span id="third" class="bg-[#166534] text-gray-200 rounded px-4 py-2 cursor-pointer">Theme Third</span>
+          <span id="first" @click="document.body.classList.add('theme-first')" class="bg-[#0891b2] text-gray-200 rounded px-4 py-2 cursor-pointer">Theme First</span>
+          <span id="second" class="bg-[#dc2626] text-gray-200 rounded px-4 py-2 cursor-pointer">Theme Second</span>
+          <span id="third" class="bg-[#16a34a] text-gray-200 rounded px-4 py-2 cursor-pointer">Theme Third</span>
+          <span id="dark" class="bg-gray-600 text-gray-200 rounded px-4 py-2 cursor-pointer">Theme Dark</span>
         </div>
       </div>
     </div>
@@ -34,6 +35,10 @@
          $("#third").click(function(){
            $("body").removeClass();
            $("body").addClass('theme-third');
+         });
+         $("#dark").click(function(){
+           $("body").removeClass();
+           $("body").addClass('dark');
          });
        });
     </script>

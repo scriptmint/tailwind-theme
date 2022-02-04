@@ -469,8 +469,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .theme-first {
-  --color-primary: #1e293b;
-  --color-secondary: #e2e8f0;
+  --color-primary: #155e75;
+  --color-secondary: #cffafe;
 }
 
 .theme-second {
@@ -527,19 +527,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: var(--color-primary);
 }
 
-.bg-\[\#1e293b\] {
+.bg-\[\#0891b2\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+  background-color: rgb(8 145 178 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#991b1b\] {
+.bg-\[\#dc2626\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#166534\] {
+.bg-\[\#16a34a\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(22 101 52 / var(--tw-bg-opacity));
+  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
+}
+
+.bg-gray-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
 .px-4 {
@@ -561,6 +566,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+.dark .dark\:bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:text-gray-200 {
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
 }

@@ -1,7 +1,8 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  content: ["./index.html"],
+  content: ["./*.{html,js}"],
+  darkMode: 'class',
   theme: {
     textColor: {
       "primary" : "var(--color-primary)",

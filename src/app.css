@@ -2,8 +2,8 @@
 @tailwind components;
 
 .theme-first {
-    --color-primary: #1e293b;
-    --color-secondary: #e2e8f0;
+    --color-primary: #155e75;
+    --color-secondary: #cffafe;
 }
 
 .theme-second {
