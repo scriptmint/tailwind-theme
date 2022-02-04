@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+
+.theme-first {
+    --color-primary: #1e293b;
+    --color-secondary: #e2e8f0;
+}
+
+.theme-second {
+    --color-primary: #991b1b;
+    --color-secondary: #fecaca;
+}
+
+.theme-third {
+    --color-primary: #166534;
+    --color-secondary: #bbf7d0;
+}
+
+@tailwind utilities;

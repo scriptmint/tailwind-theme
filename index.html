@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="https://scriptmint.com/images/favicons/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Theme CSS</title>
+    <link href="dist/app.css" rel="stylesheet">
+  </head>
+  <body class="theme-first">
+    <div class="h-screen w-full flex items-center justify-center bg-primary">
+      <div class="space-y-4">
+        <h1 class="text-secondary text-center">Hello World!</h1>
+
+        <div class="flex space-x-4">
+          <span id="first" @click="document.body.classList.add('theme-first')" class="bg-[#1e293b] text-gray-200 rounded px-4 py-2 cursor-pointer">Theme First</span>
+          <span id="second" class="bg-[#991b1b] text-gray-200 rounded px-4 py-2 cursor-pointer">Theme Second</span>
+          <span id="third" class="bg-[#166534] text-gray-200 rounded px-4 py-2 cursor-pointer">Theme Third</span>
+        </div>
+      </div>
+    </div>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+       $(document).ready(function() {
+         $("#first").click(function(){
+           $("body").removeClass();
+           $("body").addClass('theme-first');
+         });
+         $("#second").click(function(){
+           $("body").removeClass();
+           $("body").addClass('theme-second');
+         });
+         $("#third").click(function(){
+           $("body").removeClass();
+           $("body").addClass('theme-third');
+         });
+       });
+    </script>
+  </body>
+</html>
